@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe 'pgadmin3' do
+  let(:params) { {:version => '1.18.1'} }
   it do
     should contain_package('pgAdmin3').with({
       :provider => 'appdmg_eula',
